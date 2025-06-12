@@ -1,0 +1,221 @@
+/* Pricing Section Styles */
+.pricing-options {
+    margin: 60px 0;
+    padding: 40px 0;
+}
+
+.pricing-options h3 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #2d2d2d;
+    margin-bottom: 50px;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.pricing-options h3:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #6e45e2 0%, #89d4cf 100%);
+    border-radius: 3px;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #6e45e2 #f5f5f5;
+    padding-bottom: 20px;
+}
+
+/* Custom scrollbar for WebKit browsers */
+.pricing-grid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.pricing-grid::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 4px;
+}
+
+.pricing-grid::-webkit-scrollbar-thumb {
+    background-color: #6e45e2;
+    border-radius: 4px;
+}
+
+.pricing-tier {
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+    flex: 0 0 280px;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.pricing-tier:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-tier.featured {
+    border: 2px solid #6e45e2;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(110, 69, 226, 0.15);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.popular-tag {
+    position: absolute;
+    top: 15px;
+    right: -30px;
+    background: #6e45e2;
+    color: #fff;
+    padding: 5px 35px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transform: rotate(45deg);
+    width: 150px;
+    text-align: center;
+}
+
+.pricing-tier h4 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #2d2d2d;
+    font-weight: 700;
+}
+
+.price {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #6e45e2;
+    margin-bottom: 25px;
+    line-height: 1;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #6f6f87;
+    font-weight: 400;
+}
+
+.pricing-tier ul {
+    list-style: none;
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: left;
+}
+
+.pricing-tier ul li {
+    padding: 10px 0;
+    color: #6f6f87;
+    position: relative;
+    padding-left: 30px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.pricing-tier ul li i {
+    color: #6e45e2;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 12px;
+    font-size: 0.8rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #fff;
+    color: #6e45e2;
+    border: 2px solid #6e45e2;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: auto;
+    text-align: center;
+    width: 80%;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.button.primary {
+    background: #6e45e2;
+    color: #fff;
+    border-color: #6e45e2;
+}
+
+.button.primary:hover {
+    background: #5d34d1;
+    border-color: #5d34d1;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(110, 69, 226, 0.3);
+}
+
+.button:not(.primary):hover {
+    background: #6e45e2;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .pricing-grid {
+        justify-content: flex-start;
+        padding: 0 30px 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .pricing-grid {
+        padding: 0 20px 20px;
+    }
+    
+    .pricing-tier {
+        flex: 0 0 260px;
+        min-width: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-grid {
+        padding: 0 15px 20px;
+    }
+    
+    .pricing-tier {
+        flex: 0 0 240px;
+        min-width: 240px;
+        padding: 25px 15px;
+    }
+}
+}

@@ -13,7 +13,9 @@
     <meta name="robots" content="index, follow, max-image-preview:large">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://novusstudio.com/">
+    <link rel="canonical" href="https://novus-studio.vercel.app/">
+    <meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_CODE" />
+    <meta name="msvalidate.01" content="YOUR_BING_WEBMASTER_CODE" />
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
@@ -36,17 +38,22 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://novusstudio.com/">
+    <meta property="og:site_name" content="Novus Studio">
+    <meta property="og:url" content="https://novus-studio.vercel.app/">
     <meta property="og:title" content="Novus Studio | Professional Web Design & Development in Nairobi">
     <meta property="og:description" content="Elevate your digital presence with our professional web design and development services in Nairobi, Kenya. Responsive websites that drive results.">
-    <meta property="og:image" content="https://novusstudio.com/assets/images/og-image.jpg">
+    <meta property="og:image" content="https://novus-studio.vercel.app/assets/images/og-image.jpg">
+    <meta property="og:locale" content="en_KE">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://novusstudio.com/">
+    <meta name="twitter:site" content="@novusstudio">
+    <meta name="twitter:creator" content="@novusstudio">
+    <meta name="twitter:url" content="https://novus-studio.vercel.app/">
     <meta name="twitter:title" content="Novus Studio | Professional Web Design & Development">
     <meta name="twitter:description" content="Professional web design and development services in Nairobi, Kenya. We create beautiful, responsive websites that drive results.">
-    <meta name="twitter:image" content="https://novusstudio.com/assets/images/og-image.jpg">
+    <meta name="twitter:image" content="https://novus-studio.vercel.app/assets/images/og-image.jpg">
+    <meta name="twitter:image:alt" content="Novus Studio - Professional Web Design & Development">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -54,9 +61,10 @@
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "Novus Studio",
-        "image": "https://novusstudio.com/assets/images/logo.png",
-        "@id": "https://novusstudio.com",
-        "url": "https://novusstudio.com",
+        "image": "https://novus-studio.vercel.app/assets/images/logo.png",
+        "@id": "https://novus-studio.vercel.app",
+        "url": "https://novus-studio.vercel.app",
+        "logo": "https://novus-studio.vercel.app/assets/images/logo.png",
         "telephone": "+254796580516",
         "priceRange": "$$",
         "address": {
@@ -89,8 +97,17 @@
         "sameAs": [
             "https://www.linkedin.com/company/novus-studio",
             "https://github.com/novus-studio",
-            "https://twitter.com/novusstudio"
-        ]
+            "https://twitter.com/novusstudio",
+            "https://www.facebook.com/novusstudio",
+            "https://www.instagram.com/novusstudio"
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "27"
+        }
     }
     </script>
 	</head>
@@ -104,7 +121,6 @@
 					<li><a href="#services">Services</a></li>
 					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#process">Process</a></li>
-					<li><a href="#contact" class="button primary">Get Started</a></li>
 				</ul>
 			</nav>
 
@@ -130,7 +146,15 @@
 					</div>
 					<div class="col-5 col-12-medium hero-image">
 						<figure class="image-container" aria-label="Web design illustration">
-							<img src="images/hero-illustration.svg" alt="Modern web design and development illustration" width="600" height="400" class="floating" loading="eager" />
+							<img 
+								src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1269&q=80" 
+								alt="Modern web design and development illustration" 
+								width="600" 
+								height="400" 
+								class="floating" 
+								loading="eager" 
+								itemprop="image"
+							/>
 							<div class="floating-shape shape-1" aria-hidden="true"></div>
 							<div class="floating-shape shape-2" aria-hidden="true"></div>
 						</figure>
@@ -147,66 +171,112 @@
 		<section id="services" class="services-section" itemscope itemtype="https://schema.org/Service">
 			<div class="container">
 				<header class="section-header">
-					<span class="subtitle">What We Offer</span>
 					<h2>Our <span class="highlight">Services</span></h2>
 					<p class="section-description">Comprehensive digital solutions to help your business thrive online in Nairobi, Kenya and beyond</p>
 				</header>
 				
 				<div class="services-grid">
 					<article class="service-card" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
-						<div class="service-icon" aria-hidden="true">
-							<i class="fas fa-paint-brush" aria-hidden="true"></i>
-							<div class="icon-bg" aria-hidden="true"></div>
-						</div>
-						<h3 itemprop="name">Web Design</h3>
-						<p itemprop="description">Stunning, responsive websites designed with your brand in mind. We create visually appealing and user-friendly interfaces that leave a lasting impression.</p>
-						<a href="#contact" class="service-link" aria-label="Learn more about our Web Design services">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-						<meta itemprop="category" content="Web Design">
-					</article>
+    <div class="service-image">
+        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80" 
+             alt="Web Design" 
+             class="service-img">
+    </div>
+    <div class="service-icon" aria-hidden="true">
+        <i class="fas fa-paint-brush" aria-hidden="true"></i>
+    </div>
+    <div class="service-content">
+        <h3 itemprop="name">Web Design</h3>
+        <p itemprop="description">Stunning, responsive websites designed with your brand in mind. We create visually appealing and user-friendly interfaces that leave a lasting impression.</p>
+        <a href="services.html#web-design" class="service-link" aria-label="Learn more about our Web Design services">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+    <meta itemprop="category" content="Web Design">
+</article>
 
 					<article class="service-card" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
-						<div class="service-icon" aria-hidden="true">
-							<i class="fas fa-rocket" aria-hidden="true"></i>
-							<div class="icon-bg" aria-hidden="true"></div>
-						</div>
-						<h3 itemprop="name">Website Enhancement</h3>
-						<p itemprop="description">Breathe new life into your existing website with our enhancement services. We'll improve functionality, update the design, and optimize performance for better results.</p>
-						<a href="#contact" class="service-link" aria-label="Learn more about our Website Enhancement services">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-						<meta itemprop="category" content="Website Enhancement">
-					</article>
+    <div class="service-image">
+        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+             alt="Website Enhancement" 
+             class="service-img">
+    </div>
+    <div class="service-icon" aria-hidden="true">
+        <i class="fas fa-rocket" aria-hidden="true"></i>
+    </div>
+    <div class="service-content">
+        <h3 itemprop="name">Website Enhancement</h3>
+        <p itemprop="description">Breathe new life into your existing website with our enhancement services. We'll improve functionality, update the design, and optimize performance for better results.</p>
+        <a href="services.html#website-enhancement" class="service-link" aria-label="Learn more about our Website Enhancement services">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+    <meta itemprop="category" content="Website Enhancement">
+</article>
 
 					<article class="service-card" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
-						<div class="service-icon" aria-hidden="true">
-							<i class="fas fa-search" aria-hidden="true"></i>
-							<div class="icon-bg" aria-hidden="true"></div>
-						</div>
-						<h3 itemprop="name">SEO Optimization</h3>
-						<p itemprop="description">Climb the search rankings with our comprehensive SEO strategies. We'll optimize your site to attract more organic traffic and qualified leads to your business.</p>
-						<a href="#contact" class="service-link" aria-label="Learn more about our SEO Optimization services">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-						<meta itemprop="category" content="SEO">
-					</article>
+    <div class="service-image">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80" 
+             alt="SEO Optimization" 
+             class="service-img">
+    </div>
+    <div class="service-icon" aria-hidden="true">
+        <i class="fas fa-search" aria-hidden="true"></i>
+    </div>
+    <div class="service-content">
+        <h3 itemprop="name">SEO Optimization</h3>
+        <p itemprop="description">Climb the search rankings with our comprehensive SEO strategies. We'll optimize your site to attract more organic traffic and qualified leads to your business.</p>
+        <a href="services.html#seo-optimization" class="service-link" aria-label="Learn more about our SEO Optimization services">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+    <meta itemprop="category" content="SEO">
+</article>
 
 					<article class="service-card" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
-						<div class="service-icon" aria-hidden="true">
-							<i class="fas fa-code" aria-hidden="true"></i>
-							<div class="icon-bg" aria-hidden="true"></div>
-						</div>
-						<h3 itemprop="name">Custom Web Design</h3>
-						<p itemprop="description">Stand out with a completely custom website tailored to your unique business needs. No templates, just pure creativity and functionality that converts visitors into customers.</p>
-						<a href="#contact" class="service-link" aria-label="Learn more about our Custom Web Design services">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-						<meta itemprop="category" content="Custom Web Design">
-					</article>
+    <div class="service-image">
+        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+             alt="Social Media Management" 
+             class="service-img">
+    </div>
+    <div class="service-icon" aria-hidden="true">
+        <i class="fas fa-hashtag" aria-hidden="true"></i>
+    </div>
+    <div class="service-content">
+        <h3 itemprop="name">Social Media Management</h3>
+        <p itemprop="description">Elevate your brand's online presence with our comprehensive social media management services. We create engaging content and grow your audience across all major platforms.</p>
+        <a href="services.html#social-media" class="service-link" aria-label="Learn more about our Social Media Management services">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+    <meta itemprop="category" content="Social Media">
+</article>
 
 					<article class="service-card" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
-						<div class="service-icon" aria-hidden="true">
-							<i class="fas fa-user-tie" aria-hidden="true"></i>
-							<div class="icon-bg" aria-hidden="true"></div>
-						</div>
-						<h3 itemprop="name">Personal Websites</h3>
-						<p itemprop="description">Professional online presence for individuals, portfolios, and personal brands. Showcase your work, skills, and achievements with a website that reflects your unique personality and goals.</p>
-						<a href="#contact" class="service-link" aria-label="Learn more about our Personal Website services">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-						<meta itemprop="category" content="Personal Websites">
-					</article>
+    <div class="service-image">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+             alt="Custom Web Design" 
+             class="service-img">
+    </div>
+    <div class="service-icon" aria-hidden="true">
+        <i class="fas fa-code" aria-hidden="true"></i>
+    </div>
+    <div class="service-content">
+        <h3 itemprop="name">Custom Web Design</h3>
+        <p itemprop="description">Stand out with a completely custom website tailored to your unique business needs. No templates, just pure creativity and functionality that converts visitors into customers.</p>
+        <a href="services.html#custom-development" class="service-link" aria-label="Learn more about our Custom Web Design services">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+    <meta itemprop="category" content="Custom Web Design">
+</article>
+
+					<article class="service-card" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+    <div class="service-image">
+        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+             alt="Personal Websites" 
+             class="service-img">
+    </div>
+    <div class="service-icon" aria-hidden="true">
+        <i class="fas fa-user-tie" aria-hidden="true"></i>
+    </div>
+    <div class="service-content">
+        <h3 itemprop="name">Personal Websites</h3>
+        <p itemprop="description">Professional online presence for individuals, portfolios, and personal brands. Showcase your work, skills, and achievements with a website that reflects your unique personality and goals.</p>
+        <a href="services.html#personal-websites" class="service-link" aria-label="Learn more about our Personal Website services">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+    <meta itemprop="category" content="Personal Websites">
+</article>
 				</div>
 
 				<div class="cta-box" role="complementary" aria-label="Call to action">
@@ -247,13 +317,13 @@
 						<div class="portfolio-card">
 							<figure class="portfolio-image">
 								<img 
-									src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-									alt="Modern business website design" 
-									loading="lazy"
-									width="800"
-									height="600"
-									itemprop="image"
-								/>
+								src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" 
+								alt="Modern business website design" 
+								loading="lazy"
+								width="800"
+								height="600"
+								itemprop="image"
+							/>
 								<figcaption class="portfolio-overlay">
 									<div class="overlay-content">
 										<h3 itemprop="name">Modern Business Website</h3>
@@ -282,13 +352,13 @@
 						<div class="portfolio-card">
 							<figure class="portfolio-image">
 								<img 
-									src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-									alt="Online fashion e-commerce store" 
-									loading="lazy"
-									width="800"
-									height="600"
-									itemprop="screenshot"
-								/>
+								src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+								alt="Online fashion e-commerce store" 
+								loading="lazy"
+								width="800"
+								height="600"
+								itemprop="screenshot"
+							/>
 								<figcaption class="portfolio-overlay">
 									<div class="overlay-content">
 										<h3 itemprop="name">Online Fashion Store</h3>
@@ -318,13 +388,13 @@
 						<div class="portfolio-card">
 							<figure class="portfolio-image">
 								<img 
-									src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-									alt="Restaurant branding and identity design" 
-									loading="lazy"
-									width="800"
-									height="600"
-									itemprop="image"
-								/>
+								src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+								alt="Restaurant branding and identity design" 
+								loading="lazy"
+								width="800"
+								height="600"
+								itemprop="image"
+							/>
 								<figcaption class="portfolio-overlay">
 									<div class="overlay-content">
 										<h3 itemprop="name">Restaurant Branding</h3>
@@ -353,7 +423,7 @@
 						<div class="portfolio-card">
 							<figure class="portfolio-image">
 								<img 
-									src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+									src="https://images.unsplash.com/photo-1591488320449-011701bb6704?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
 									alt="Electronics e-commerce website" 
 									loading="lazy"
 									width="800"
@@ -389,7 +459,7 @@
 						<div class="portfolio-card">
 							<figure class="portfolio-image">
 								<img 
-									src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+									src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" 
 									alt="Creative Agency Website Design" 
 									loading="lazy"
 									width="800"
@@ -424,7 +494,7 @@
 						<div class="portfolio-card">
 							<figure class="portfolio-image">
 								<img 
-									src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+									src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
 									alt="Corporate Branding and Identity Design" 
 									loading="lazy"
 									width="800"
@@ -487,10 +557,7 @@
 		<article id="about" class="about-section">
 			<div class="container">
 				<header class="section-header">
-					<span class="subtitle">Our Story</span>
-					<h2><strong>Building Digital Excellence</strong></h2>
-					<!-- <h2>Building Digital Excellence<span class="highlight"></span></h2> -->
-					<!-- <h2>Excellence</h2> -->
+					<h2><span class="highlight">Our Story</span></h2>
 					<p class="section-description">Innovative solutions, exceptional results. We transform ideas into powerful digital experiences that drive business growth.</p>
 				</header>
 
@@ -519,7 +586,18 @@
 						</div>
 					</div>
 					<div class="about-image">
-						<img src="https://images.unsplash.com/photo-1522071820081-009c2c7e9349?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Our Mission">
+						<figure class="image-container">
+							<img 
+								src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+								alt="Our Mission - Team collaboration in digital workspace"
+								loading="lazy"
+								width="600"
+								height="400"
+								itemprop="image"
+								style="width: 100%; height: 100%; object-fit: cover;"
+							/>
+							<div class="floating-shape shape-1" aria-hidden="true"></div>
+						</figure>
 					</div>
 				</div>
 
@@ -595,6 +673,22 @@
 						<h3>Partnership</h3>
 						<p>Building lasting relationships where your success is our top priority and shared goal.</p>
 					</div>
+
+					<div class="value-card">
+						<div class="value-icon">
+							<i class="fas fa-users"></i>
+						</div>
+						<h3>Collaboration</h3>
+						<p>Working closely with our clients to understand their vision and bring it to life through teamwork and shared expertise.</p>
+					</div>
+
+					<div class="value-card">
+						<div class="value-icon">
+							<i class="fas fa-bolt"></i>
+						</div>
+						<h3>Agility</h3>
+						<p>Adapting quickly to new challenges and opportunities to deliver flexible, future-proof solutions that grow with your business.</p>
+					</div>
 				</div>
 
 				<div class="cta-container">
@@ -660,131 +754,118 @@
 			</div>
 		</article>
 
-		<!-- Contact Section -->
-		<article id="contact" class="contact-section">
+		<!-- Contact Information Section -->
+		<article id="contact-info" class="contact-info-section">
 			<div class="container">
 				<header class="section-header">
-					<!-- <span class="subtitle">Get In Touch</span> -->
-					<h2>Let's <span class="highlight">Connect</span></h2>
-					<p class="section-description">Have a project in mind or want to discuss how we can help? We'd love to hear from you.</p>
+					<h2>Our <span class="highlight">Contact Information</span></h2>
+					<p class="section-description">Get in touch with us through any of these channels. We're here to help!</p>
 				</header>
 
-				<div class="contact-grid">
-					<!-- Contact Information -->
-					<div class="contact-card-wrapper">
-						<div class="contact-card">
-							<div class="contact-card-inner">
-								<div class="contact-icon">
-									<i class="fas fa-paper-plane"></i>
-								</div>
-								<h3>Contact Information</h3>
-								<p class="contact-intro">Have questions or want to discuss your next project? Reach out to us through any of these channels:</p>
-								
-								<ul class="contact-details">
-									<li>
-										<div class="contact-detail-icon">
-											<i class="fas fa-phone"></i>
-										</div>
-										<div class="contact-detail-content">
-											<h4>Phone</h4>
-											<a href="tel:+254796580516" class="contact-link">+254 796 580 516</a>
-										</div>
-									</li>
-									<li>
-										<div class="contact-detail-icon">
-											<i class="fas fa-envelope"></i>
-										</div>
-										<div class="contact-detail-content">
-											<h4>Email</h4>
-											<a href="mailto:bernardkingori026@gmail.com" class="contact-link">bernardkingori026@gmail.com</a>
-										</div>
-									</li>
-									<li>
-										<div class="contact-detail-icon">
-											<i class="fas fa-map-marker-alt"></i>
-										</div>
-										<!-- <div class="contact-detail-content">
-											<h4>Location</h4>
-											<address>123 Design Street<br>Creative City, 10001</address>
-										</div> -->
-									</li>
-								</ul>
-
-								<div class="contact-hours">
-									<h4>Working Hours</h4>
-									<ul class="hours-list">
-										<li><span class="day">Monday - Friday</span><span class="time">9:00 AM - 6:00 PM</span></li>
-										<li><span class="day">Saturday</span><span class="time">10:00 AM - 4:00 PM</span></li>
-										<li><span class="day">Sunday</span><span class="time">Closed</span></li>
-									</ul>
-								</div>
-
-								<div class="social-links">
-									<span>Follow Us:</span>
-									<div class="social-icons">
-										<a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
-											<i class="fab fa-facebook-f"></i>
-										</a>
-										<a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter">
-											<i class="fab fa-twitter"></i>
-										</a>
-										<a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
-											<i class="fab fa-instagram"></i>
-										</a>
-										<a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
-											<i class="fab fa-linkedin-in"></i>
-										</a>
+				<div class="contact-card-wrapper">
+					<div class="contact-card">
+						<div class="contact-card-inner">
+							<div class="contact-icon">
+								<i class="fas fa-paper-plane"></i>
+							</div>
+							<h3>How to Reach Us</h3>
+							<p class="contact-intro">Have questions or want to discuss your next project? Here's how you can reach us:</p>
+							
+							<ul class="contact-details">
+								<li>
+									<div class="contact-detail-icon">
+										<i class="fas fa-phone"></i>
 									</div>
+									<div class="contact-detail-content">
+										<h4>Phone</h4>
+										<a href="tel:+254796580516" class="contact-link">+254 796 580 516</a>
+									</div>
+								</li>
+								<li>
+									<div class="contact-detail-icon">
+										<i class="fas fa-envelope"></i>
+									</div>
+									<div class="contact-detail-content">
+										<h4>Email</h4>
+										<a href="mailto:bernardkingori026@gmail.com" class="contact-link">bernardkingori026@gmail.com</a>
+									</div>
+								</li>
+							</ul>
+
+							<div class="contact-hours">
+								<h4>Working Hours</h4>
+								<ul class="hours-list">
+									<li><span class="day">Monday - Friday</span><span class="time">9:00 AM - 6:00 PM</span></li>
+									<li><span class="day">Saturday</span><span class="time">10:00 AM - 4:00 PM</span></li>
+									<li><span class="day">Sunday</span><span class="time">Closed</span></li>
+								</ul>
+							</div>
+
+							<div class="social-links">
+								<span>Connect With Us:</span>
+								<div class="social-icons">
+									<a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+									<a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter">
+										<i class="fab fa-twitter"></i>
+									</a>
+									<a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+										<i class="fab fa-instagram"></i>
+									</a>
+									<a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+										<i class="fab fa-linkedin-in"></i>
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+		</article>
 
-					<!-- Contact Form -->
-					<div class="form-wrapper">
-						<div class="form-header">
-							<h3>Send Us a Message</h3>
-							<p>Fill out the form below and we'll get back to you as soon as possible.</p>
-						</div>
-						
-						<form action="process_form.php" method="POST" class="contact-form" id="contactForm" novalidate>
+		<!-- Contact Form Section -->
+		<article id="contact" class="contact-form-section">
+			<div class="container">
+				<header class="section-header">
+					<h2>Send Us a <span class="highlight">Message</span></h2>
+					<p class="section-description">Have a project in mind? Fill out the form below and we'll get back to you as soon as possible.</p>
+				</header>
+
+				<div class="form-wrapper">
+					<div class="form-inner">
+						<form action="submit-form.php" method="POST" class="contact-form" id="contactForm" novalidate>
 							<div id="form-messages" class="form-messages"></div>
 							
 							<div class="form-row">
 								<div class="form-group">
 									<label for="name">Full Name <span class="required">*</span></label>
-									<div class="input-group">
-										<span class="input-icon"><i class="fas fa-user"></i></span>
-										<input type="text" id="name" name="name" placeholder="John Doe" required minlength="2" maxlength="50">
-									</div>
+									<input type="text" id="name" name="name" class="form-control" placeholder="Your name" required minlength="2" maxlength="50">
 									<div class="error-message"></div>
 								</div>
 								
 								<div class="form-group">
 									<label for="email">Email Address <span class="required">*</span></label>
-									<div class="input-group">
-										<span class="input-icon"><i class="fas fa-envelope"></i></span>
-										<input type="email" id="email" name="email" placeholder="your.email@example.com" required>
-									</div>
+									<input type="email" id="email" name="email" class="form-control" placeholder="Your email" required>
 									<div class="error-message"></div>
 								</div>
 							</div>
 							
 							<div class="form-group">
+								<label for="phone">Phone Number</label>
+								<input type="tel" id="phone" name="phone" class="form-control" placeholder="Your phone number (optional)">
+								<div class="error-message"></div>
+							</div>
+
+							<div class="form-group">
 								<label for="subject">Subject <span class="required">*</span></label>
-								<div class="input-group">
-									<span class="input-icon"><i class="fas fa-tag"></i></span>
-									<input type="text" id="subject" name="subject" placeholder="How can we help you?" required>
-								</div>
+								<input type="text" id="subject" name="subject" class="form-control" placeholder="How can we help you?" required>
 								<div class="error-message"></div>
 							</div>
 							
 							<div class="form-group">
 								<label for="message">Your Message <span class="required">*</span></label>
-								<div class="input-group">
-									<span class="input-icon"><i class="fas fa-comment-alt"></i></span>
-									<textarea id="message" name="message" rows="5" placeholder="Tell us about your project or inquiry..." required minlength="10" maxlength="1000"></textarea>
-								</div>
+								<textarea id="message" name="message" class="form-control" rows="5" placeholder="Tell us about your project or inquiry..." required minlength="10" maxlength="1000"></textarea>
 								<div class="error-message"></div>
 							</div>
 							
